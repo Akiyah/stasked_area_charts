@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript">
+      function createGraph() {
+        var chart = new CanvasJS.Chart("chart_div", {
+          data: [{
+            type: "stackedArea",
+            dataPoints: [
+              { x: new Date(2018,  1, 1), y: 19009 },
+              { x: new Date(2018,  2, 1), y: 13947 },
+              { x: new Date(2018,  3, 1), y: 24942 },
+              { x: new Date(2018,  4, 1), y: 15411 },
+              { x: new Date(2018,  5, 1), y: 21129 },
+              { x: new Date(2018,  6, 1), y: 19583 },
+              { x: new Date(2018,  7, 1), y: 26773 },
+              { x: new Date(2018,  8, 1), y: 22128 },
+              { x: new Date(2018,  9, 1), y: 17272 },
+              { x: new Date(2018, 10, 1), y: 18763 },
+              { x: new Date(2018, 11, 1), y: 21906 },
+              { x: new Date(2018, 12, 1), y: 10073 },
+              { x: new Date(2019,  1, 1), y: 10623 },
+              { x: new Date(2019,  2, 1), y: 18955 },
+              { x: new Date(2019,  3, 1), y: 28247 },
+              { x: new Date(2019,  4, 1), y: 23907 },
+              { x: new Date(2019,  5, 1), y: 30090 },
+              { x: new Date(2019,  6, 1), y: 17675 },
+              { x: new Date(2019,  7, 1), y: 15550 },
+              { x: new Date(2019,  8, 1), y: 23294 },
+              { x: new Date(2019,  9, 1), y: 24771 },
+              { x: new Date(2019, 10, 1), y: 13945 },
+              { x: new Date(2019, 11, 1), y: 19489 },
+              { x: new Date(2019, 12, 1), y: 22906 }
+            ]
+          }, {
+            type: "stackedArea",
+            dataPoints: [
+              { x: new Date(2018,  1, 1), y: 14578 },
+              { x: new Date(2018,  2, 1), y: 14584 },
+              { x: new Date(2018,  3, 1), y:  3187 },
+              { x: new Date(2018,  4, 1), y: 16378 },
+              { x: new Date(2018,  5, 1), y:  9377 },
+              { x: new Date(2018,  6, 1), y: 10062 },
+              { x: new Date(2018,  7, 1), y:  8328 },
+              { x: new Date(2018,  8, 1), y:  3813 },
+              { x: new Date(2018,  9, 1), y: 18887 },
+              { x: new Date(2018, 10, 1), y:  4744 },
+              { x: new Date(2018, 11, 1), y: 12102 },
+              { x: new Date(2018, 12, 1), y: 14144 },
+              { x: new Date(2019,  1, 1), y:  4752 },
+              { x: new Date(2019,  2, 1), y: 10792 },
+              { x: new Date(2019,  3, 1), y:  1076 },
+              { x: new Date(2019,  4, 1), y: 11053 },
+              { x: new Date(2019,  5, 1), y:  4886 },
+              { x: new Date(2019,  6, 1), y: 12031 },
+              { x: new Date(2019,  7, 1), y:  9827 },
+              { x: new Date(2019,  8, 1), y:  2401 },
+              { x: new Date(2019,  9, 1), y: 11646 },
+              { x: new Date(2019, 10, 1), y: 11785 },
+              { x: new Date(2019, 11, 1), y:  3401 },
+              { x: new Date(2019, 12, 1), y: 15054 }
+            ]
+          }, {
+            type: "stackedArea",
+            dataPoints: [
+              { x: new Date(2018,  1, 1), y: 10425 },
+              { x: new Date(2018,  2, 1), y: 10431 },
+              { x: new Date(2018,  3, 1), y: 17551 },
+              { x: new Date(2018,  4, 1), y: 13885 },
+              { x: new Date(2018,  5, 1), y:  9577 },
+              { x: new Date(2018,  6, 1), y: 13823 },
+              { x: new Date(2018,  7, 1), y:  9819 },
+              { x: new Date(2018,  8, 1), y:  5847 },
+              { x: new Date(2018,  9, 1), y:  9800 },
+              { x: new Date(2018, 10, 1), y:  6370 },
+              { x: new Date(2018, 11, 1), y: 12008 },
+              { x: new Date(2018, 12, 1), y: 10348 },
+              { x: new Date(2019,  1, 1), y:  5137 },
+              { x: new Date(2019,  2, 1), y: 16812 },
+              { x: new Date(2019,  3, 1), y:  4027 },
+              { x: new Date(2019,  4, 1), y:  6792 },
+              { x: new Date(2019,  5, 1), y: 10928 },
+              { x: new Date(2019,  6, 1), y:  4819 },
+              { x: new Date(2019,  7, 1), y: 16334 },
+              { x: new Date(2019,  8, 1), y:  7229 },
+              { x: new Date(2019,  9, 1), y: 12376 },
+              { x: new Date(2019, 10, 1), y: 16720 },
+              { x: new Date(2019, 11, 1), y: 10592 },
+              { x: new Date(2019, 12, 1), y: 11802 }
+            ]
+          }]
+        });
+
+        chart.render();
+      }
+
+      window.onload = createGraph;
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 100%; height: 500px;"></div>
+  </body>
+</html>
