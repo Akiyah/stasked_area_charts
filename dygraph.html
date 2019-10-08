@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <script src="http://dygraphs.com/dygraph.js"></script>
+    <script type="text/javascript">
+      function createGraph() {
+        var data = [
+          [new Date(2018,  1, 1), 19009, 14578, 10425],
+          [new Date(2018,  2, 1), 13947, 14584, 10431],
+          [new Date(2018,  3, 1), 24942,  3187, 17551],
+          [new Date(2018,  4, 1), 15411, 16378, 13885],
+          [new Date(2018,  5, 1), 21129,  9377,  9577],
+          [new Date(2018,  6, 1), 19583, 10062, 13823],
+          [new Date(2018,  7, 1), 26773,  8328,  9819],
+          [new Date(2018,  8, 1), 22128,  3813,  5847],
+          [new Date(2018,  9, 1), 17272, 18887,  9800],
+          [new Date(2018, 10, 1), 18763,  4744,  6370],
+          [new Date(2018, 11, 1), 21906, 12102, 12008],
+          [new Date(2018, 12, 1), 10073, 14144, 10348],
+          [new Date(2019,  1, 1), 10623,  4752,  5137],
+          [new Date(2019,  2, 1), 18955, 10792, 16812],
+          [new Date(2019,  3, 1), 28247,  1076,  4027],
+          [new Date(2019,  4, 1), 23907, 11053,  6792],
+          [new Date(2019,  5, 1), 30090,  4886, 10928],
+          [new Date(2019,  6, 1), 17675, 12031,  4819],
+          [new Date(2019,  7, 1), 15550,  9827, 16334],
+          [new Date(2019,  8, 1), 23294,  2401,  7229],
+          [new Date(2019,  9, 1), 24771, 11646, 12376],
+          [new Date(2019, 10, 1), 13945, 11785, 16720],
+          [new Date(2019, 11, 1), 19489,  3401, 10592],
+          [new Date(2019, 12, 1), 22906, 15054, 11802]
+        ];
+
+        new Dygraph(
+          document.getElementById("chart_div"),
+          data,
+          {
+            labels: ['date', 'division_A', 'division_B', 'division_C'],
+            stackedGraph: true,
+          });
+      }
+
+      window.onload = createGraph;
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 100%; height: 500px;"></div>
+  </body>
+</html>
